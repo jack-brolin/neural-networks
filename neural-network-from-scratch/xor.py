@@ -3,23 +3,7 @@ from utils.nn import NeuralNetwork
 
 from utils.loss import Cost
 
-import pandas as pd
 import numpy as np
-
-# data = pd.read_csv("./data/housepricedata.csv")
-# X = np.reshape(data[[
-#     "LotArea",
-#     "OverallQual",
-#     "OverallCond",
-#     "TotalBsmtSF",
-#     "FullBath",
-#     "HalfBath",
-#     "BedroomAbvGr",
-#     "TotRmsAbvGrd",
-#     "Fireplaces",
-#     "GarageArea"
-# ]].to_numpy(), (data.shape[0], data.shape[1] - 1, 1))
-# Y = np.reshape(data[["AboveMedianPrice"]].to_numpy(), (data.shape[0], 1, 1))
 
 X = np.reshape([[0, 0], [0, 1], [1, 0], [1, 1]], (4, 2, 1))
 Y = np.reshape([[0], [1], [1], [0]], (4, 1, 1))
